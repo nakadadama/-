@@ -1,0 +1,474 @@
+
+
+    *,
+    *::before,
+    *::after{
+        box-sizing: border-box;
+    }
+
+    html,
+    body{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        background-color: #fff;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    ul,
+    ol{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+       margin: 0;
+       padding: 0; 
+    }
+    a{
+        color: inherit;
+    }
+
+    .inner{
+          width: 1200px;
+          max-width: 100%;
+          margin: 0 auto;
+        }
+        .hr{
+            margin: 42px 0;
+        }
+    .heading01{
+        font-size: 24px;
+        font-weight: 700;
+        border-bottom: 3px solid #3F51B5;
+        padding:  0 0 4px;
+    }
+    .heading02{
+        font-size: 24px;
+        font-weight: 700;
+        border-bottom: 3px dotted #3F51B5;
+        padding-bottom: 4px;
+    }
+    .heading03{
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        background: #3F51B5;
+        padding: 6px 12px;
+    }
+    .heading04{
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        background: #7385E9;
+        padding: 6px 12px;
+        border-bottom: 2px #3F51B5 solid;
+    }
+    .heading05{
+        font-size: 24px;
+        font-weight: 700;
+        padding: 4px 12px;
+        border-left: 5px solid #3F51B5;
+    }
+    .heading06{
+        font-size: 24px;
+        font-weight: 700;
+        background: linear-gradient(transparent 50%,#DCEE39 0);
+    }
+    .heading07{
+        font-size: 24px;
+        font-weight: 700;
+        
+        span{
+            display: inline-block;
+            padding: 3px;
+            background: #DCEE39;
+
+            &:nth-child(n+2){
+                margin-top: 10px;
+            }
+        }
+    }
+    .heading08{
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        background: #3F51B5;
+        padding: 6px 12px;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "";
+            left: 30px;
+            top: 100%;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 16px 13px 0 13px;
+            border-color: #3F51B5 transparent transparent transparent;
+        }
+    }
+    .heading09{
+        font-size: 24px;
+        font-weight: 700;
+        border-bottom: 2px solid #3F51B5;
+        padding:  0 0 4px;
+        position: relative;
+
+        &::after{
+        position: absolute;
+        content: "";
+        width: 82px;
+        height: 2px;
+        background: #B53F4F;
+        left: 0;
+        bottom: 0;
+        top: 100%;
+        }
+    }
+    .heading10{
+        font-size: 24px;
+        font-weight: 700;
+        padding: 3px 12px;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 36px;
+            background: #3F51B5;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .heading11{
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 20px;
+        text-align: center;
+
+        &::after{
+            position: absolute;
+            content: "";
+            height: 4px;
+            width: 52px;
+            background: #3F51B5;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    .heading12{
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        padding-left: 24px;
+
+        &::before{
+            position: absolute;
+            content: "";
+            width: 9px;
+            height: 12px;
+            background: url(../img/check.png) no-repeat center center / contain;
+            left: 0;
+            top:50%;
+            transform: translateY(-50%);
+
+        }
+    }
+    .heading13{
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        display: inline-block;
+        padding-right: 27px;
+
+        &::after{
+            position: absolute;
+            content: "";
+            width: 19px;
+            height: 22px;
+            background: url(../img/glass.png) no-repeat center center / contain;
+            right: 0;
+            top:-10%;
+            
+        }
+    }
+    .heading14{
+      text-align: center;
+      padding: 6 60px;
+      font-size: 24px;
+      font-weight: 700;
+      
+
+      span{
+          display: inline-block;
+          position: relative;
+          padding: 0 24px;
+
+       &::before{
+           content: "";
+           width: 3px;
+           height: 34px;
+           background: #3F51B5;
+           position: absolute;
+           left: 0;
+           top:50%;
+           transform: translateY(-50%) rotate(-10deg);
+       }
+       &::after{
+        content: "";
+        width: 3px;
+        height: 34px;
+        background: #3F51B5;
+        position: absolute;
+        right: 0;
+        top:50%;
+        transform: translateY(-50%) rotate(10deg);
+    }
+      }
+    }
+
+    .heading15{
+        font-size: 24px;
+      font-weight: 700;
+      position: relative;
+      text-align: center;
+
+      &::after{
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: 100%;
+          height: 3px;
+          background: #3F51B5;
+      }
+        span{
+position: relative;
+z-index: 2;
+background: #fff;
+padding: 0 10px;
+        }
+    }
+
+    .heading16{
+        font-size: 24px;
+        font-weight: 700;
+        background: repeating-linear-gradient(-45deg,#a7baff 0 15px,#7386e9 15px 30px);
+        padding: 4px;
+    }
+
+    .heading17{
+        font-size: 24px;
+        font-weight: 700;
+        padding: 8px 8px 2px;
+        position: relative;
+        display: inline-block;
+        
+span{
+    z-index: 2;
+    position: relative;
+}
+
+        &::after{
+            content: "";
+            width: 100%;
+            height: 18px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: repeating-linear-gradient(-45deg,#a7baff 0 15px,#7386e9 15px 30px);
+        }
+    }
+
+    .button1{
+        width: 240px;
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        background:#3F51B5;
+        border-radius: 3px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .button2{
+        width: 240px;
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        background:#3F51B5;
+        border-radius: 3px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            right: 16px;
+            width: 7px;
+            height: 16px;
+            background: url(../img/button-arrow.png) no-repeat center center / contain;
+        }
+    }
+
+    .button3{
+        width: 240px;
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        background:#3F51B5;
+        border-radius: 3px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        
+
+        span{
+            position: relative;
+            padding-right: 19px;
+            display: inline-block;
+            
+        
+
+        &::after{
+            position: absolute;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0px;
+            width: 7px;
+            height: 16px;
+            background: url(../img/button-arrow.png) no-repeat center center / contain;
+        }
+     }
+    }
+
+    .button4{
+        width: 240px;
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        background:#3F51B5;
+        border-radius: 3px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0 4px 0 #20295B;
+    }
+    .button5{
+        width: 240px;
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        background:linear-gradient(to bottom,#3F51B5,#20295B);
+        border-radius: 3px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .button6{
+        width: 240px;
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        background:transparent;
+        border: 2px solid #fff;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .button7{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: #3F51B5;
+        line-height: (24/16);
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+    }
+    .button8{
+        width: 240px;
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        background:#3F51B5;
+        border-radius: 115px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "";
+            top: 50%;
+            transform: translateY(-50%);
+            right: 16px;
+            width: 7px;
+            height: 16px;
+            background: url(../img/button-arrow.png) no-repeat center center / contain;
+        }
+    }
+
+    .button9{
+        width: 240px;
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        background:#3F51B5;
+        border-radius: 3px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+        border-bottom: 2px solid #20295B;
+    }
